@@ -62,11 +62,11 @@
     }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-200 text-gray-800">
   <div class="flex flex-col lg:flex-row min-h-screen">
 
     <!-- Sidebar -->
-    <aside class="lg:w-72 w-full bg-white p-4 shadow-sm overflow-y-auto">
+    <aside class="lg:w-72 w-full bg-gray-200 p-4 shadow-sm overflow-y-auto">
       <h2 class="text-xl font-bold mb-4">🔍 Filters</h2>
       <div class="space-y-3 mb-6">
         <button id="clear-filters" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">🧹 Clear All Filters</button>
@@ -92,6 +92,105 @@
 
   <!-- Expanded -->
   <div id="expanded" class="hidden fixed inset-0 bg-white z-50 overflow-y-auto p-6"></div>
+
+    <!-- Footer -->
+  <footer class="bg-gray-200 border-t mt-6">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 sm:grid-cols-4 gap-6">
+      
+      <!-- University Sites -->
+      <div>
+        <h3 class="font-semibold mb-3">University Sites</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><a href="https://www.uoa.gr" target="_blank" class="hover:text-blue-500 underline">Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών</a></li>
+          <li><a href="https://www.auth.gr" target="_blank" class="hover:text-blue-500 underline">Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης</a></li>
+          <li><a href="https://www.uoc.gr" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Κρήτης</a></li>
+          <li><a href="https://www.upatras.gr" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Πατρών</a></li>
+          <li><a href="https://www.aegean.gr" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Αιγαίου</a></li>
+          <li><a href="https://ntua.gr/el/" target="_blank" class="hover:text-blue-500 underline">Εθνικό Μετσόβιο Πολυτεχνείο</a></li>
+          <li><a href="http://www.asfa.gr/" target="_blank" class="hover:text-blue-500 underline">Ανωτάτη Σχολή Καλών Τεχνών</a></li>
+          <li><a href="https://www.aua.gr/" target="_blank" class="hover:text-blue-500 underline">Γεωπονικό Πανεπιστήμιο Αθηνών</a></li>
+          <li><a href="https://www.aueb.gr/" target="_blank" class="hover:text-blue-500 underline">Οικονομικό Πανεπιστήμιο Αθηνών</a></li>
+          <li><a href="https://www.panteion.gr/" target="_blank" class="hover:text-blue-500 underline">Πάντειον Πανεπιστήμιο</a></li>
+          <li><a href="https://www.unipi.gr/" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Πειραιώς</a></li>
+          <li><a href="https://www.uom.gr/" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Μακεδονίας</a></li>
+          <li><a href="https://uoi.gr/" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Ιωαννίνων</a></li>
+          <li><a href="https://duth.gr/" target="_blank" class="hover:text-blue-500 underline">Δημοκρίτειο Πανεπιστήμιο Θράκης</a></li>
+          <li><a href="https://www.tuc.gr/el" target="_blank" class="hover:text-blue-500 underline">Πολυτεχνείο Κρήτης</a></li>
+          <li><a href="https://www.uth.gr/" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Θεσσαλίας</a></li>
+          <li><a href="https://www.ionio.gr/" target="_blank" class="hover:text-blue-500 underline">Ιόνιο Πανεπιστήμιο</a></li>
+          <li><a href="https://www.hua.gr/" target="_blank" class="hover:text-blue-500 underline">Χαροκόπειο Πανεπιστήμιο</a></li>
+          <li><a href="http://www.uop.gr/" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Πελοποννήσου</a></li>
+          <li><a href="https://www.eap.gr/" target="_blank" class="hover:text-blue-500 underline">Ελληνικό Ανοικτό Πανεπιστήμιο</a></li>
+          <li><a href="https://www.uowm.gr/" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Δυτικής Μακεδονίας</a></li>
+          <li><a href="https://www.ihu.gr/" target="_blank" class="hover:text-blue-500 underline">Διεθνές Πανεπιστήμιο της Ελλάδος</a></li>
+          <li><a href="https://www.uniwa.gr/" target="_blank" class="hover:text-blue-500 underline">Πανεπιστήμιο Δυτικής Αττικής</a></li>
+          <li><a href="https://hmu.gr/" target="_blank" class="hover:text-blue-500 underline">Ελληνικό Μεσογειακό Πανεπιστήμιο</a></li>
+        </ul>
+      </div>
+
+      <!-- Subreddit Links -->
+      <div>
+        <h3 class="font-semibold mb-3">Subreddits</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><a href="https://www.reddit.com/r/College/" target="_blank" class="hover:text-blue-500 underline">r/College</a></li>
+          <li><a href="https://www.reddit.com/r/ApplyingToCollege/" target="_blank" class="hover:text-blue-500 underline">r/ApplyingToCollege</a></li>
+          <li><a href="https://www.reddit.com/r/Scholarships/" target="_blank" class="hover:text-blue-500 underline">r/Scholarships</a></li>
+          <li><a href="https://www.reddit.com/r/GetStudying/" target="_blank" class="hover:text-blue-500 underline">r/GetStudying</a></li>
+          <li><a href="https://www.reddit.com/r/GradSchool/" target="_blank" class="hover:text-blue-500 underline">r/GradSchool</a></li>
+          <li><a href="https://www.reddit.com/r/TodayILearned/" target="_blank" class="hover:text-blue-500 underline">r/TodayILearned</a></li>
+          <li><a href="https://www.reddit.com/r/YouShouldKnow/" target="_blank" class="hover:text-blue-500 underline">r/YouShouldKnow</a></li>
+          <li><a href="https://www.reddit.com/r/LifeProTips/" target="_blank" class="hover:text-blue-500 underline">r/LifeProTips</a></li>
+          <li><a href="https://www.reddit.com/r/NoStupidQuestions/" target="_blank" class="hover:text-blue-500 underline">r/NoStupidQuestions</a></li>
+          <li><a href="https://www.reddit.com/r/ExplainLikeImFive/" target="_blank" class="hover:text-blue-500 underline">r/ExplainLikeImFive</a></li>
+          <li><a href="https://www.reddit.com/r/HomeworkHelp/" target="_blank" class="hover:text-blue-500 underline">r/HomeworkHelp</a></li>
+          <li><a href="https://www.reddit.com/r/LanguageLearning/" target="_blank" class="hover:text-blue-500 underline">r/LanguageLearning</a></li>
+          <li><a href="https://www.reddit.com/r/OpenEd/" target="_blank" class="hover:text-blue-500 underline">r/OpenEd</a></li>
+          <li><a href="https://www.reddit.com/r/DataIsBeautiful/" target="_blank" class="hover:text-blue-500 underline">r/DataIsBeautiful</a></li>
+          <li><a href="https://www.reddit.com/r/frugal/" target="_blank" class="hover:text-blue-500 underline">r/Frugal</a></li>
+          <li><a href="https://www.reddit.com/r/slackerrecipes/" target="_blank" class="hover:text-blue-500 underline">r/slackerrecipes</a></li>
+          <li><a href="https://www.reddit.com/r/Freebies/" target="_blank" class="hover:text-blue-500 underline">r/Freebies</a></li>
+          <li><a href="https://www.reddit.com/r/CollegeMajors/" target="_blank" class="hover:text-blue-500 underline">r/CollegeMajors</a></li>
+          <li><a href="https://www.reddit.com/r/engineeringstudents/" target="_blank" class="hover:text-blue-500 underline">r/engineeringstudents</a></li>
+          <li><a href="https://www.reddit.com/r/LawSchool/" target="_blank" class="hover:text-blue-500 underline">r/LawSchool</a></li>
+        </ul>
+      </div>
+
+  <!-- AIs Links -->
+  <div>
+    <h3 class="font-semibold mb-3">AI</h3>
+    <ul class="space-y-2 text-gray-700">
+      <li><a href="https://www.openai.com/chatgpt" target="_blank" class="hover:text-blue-500 underline">ChatGPT</a></li>
+      <li><a href="https://claude.ai" target="_blank" class="hover:text-blue-500 underline">Claude (Anthropic)</a></li>
+      <li><a href="https://gemini.google/overview/video-generation/" target="_blank" class="hover:text-blue-500 underline">Veo 3</a></li>
+      <li><a href="https://www.openai.com/gpt-5" target="_blank" class="hover:text-blue-500 underline">GPT-5</a></li>
+      <li><a href="https://perplexity.ai" target="_blank" class="hover:text-blue-500 underline">Perplexity AI</a></li>
+      <li><a href="https://gemini.google.com/app" target="_blank" class="hover:text-blue-500 underline">Gemini</a></li>
+      <li><a href="https://www.grammarly.com" target="_blank" class="hover:text-blue-500 underline">Grammarly</a></li>
+      <li><a href="https://notion.so" target="_blank" class="hover:text-blue-500 underline">Notion AI</a></li>
+      <li><a href="https://quillbot.com" target="_blank" class="hover:text-blue-500 underline">QuillBot</a></li>
+      <li><a href="https://www.trickprof.com" target="_blank" class="hover:text-blue-500 underline">Quizlet AI</a></li>
+      <li><a href="https://www.otter.ai" target="_blank" class="hover:text-blue-500 underline">Otter.ai</a></li>
+      <li><a href="https://www.khanmigo.ai/" target="_blank" class="hover:text-blue-500 underline">Khanmigo (Khan Academy)</a></li>
+      <li><a href="https://ischoolofai.com" target="_blank" class="hover:text-blue-500 underline">ischoolofai</a></li>
+      <li><a href="https://deepL.com" target="_blank" class="hover:text-blue-500 underline">DeepL / DeepL Write</a></li>
+      <li><a href="https://autoppt.com/" target="_blank" class="hover:text-blue-500 underline">AutoPPT</a></li>
+      </ul>
+    </div>
+
+      <!-- Other Projects -->
+      <div>
+        <h3 class="font-semibold mb-3">Other Projects</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><a  class="hover:text-blue-500 underline">Loading...</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="text-center text-gray-500 text-sm mt-4 pb-4">
+      &copy; 2025 Greek University Explorer. All rights reserved.
+    </div>
+  </footer>
+
 
   <script>
     const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQZxm4efvtDGrarm7O7Ckb8JamHlbIXlLqlr8R1D0k4jJC6YvP6bpoRT1bDyh55tpiUuCWzOTIylclc/pub?output=csv';
@@ -123,7 +222,7 @@
         btnContainer.className = 'flex flex-wrap gap-2';
         values.forEach(value => {
           const btn = document.createElement('button');
-          btn.className = 'filter-btn px-2 py-1 text-sm rounded border border-gray-300';
+          btn.className = 'filter-btn px-2 py-1 text-sm rounded border bg-white hover:bg-blue-400 ';
           btn.textContent = value;
           btn.addEventListener('click', () => {
             btn.classList.toggle('active');
