@@ -29,6 +29,67 @@
   <link rel="icon" type="image/png" sizes="192x192" href="https://twemoji.maxcdn.com/v/latest/72x72/1f393.png">
   <link rel="apple-touch-icon" href="https://twemoji.maxcdn.com/v/latest/72x72/1f393.png">
 
+  <link rel="stylesheet" id="silktide-consent-manager-css" href="public/silktide-consent-manager.css">
+  <script src="public/silktide-consent-manager.js"></script>
+  <script>
+  silktideCookieBannerManager.updateCookieBannerConfig({
+    background: {
+      showBackground: true
+    },
+    cookieIcon: {
+      position: "bottomLeft"
+    },
+    cookieTypes: [
+      {
+        id: "",
+        name: "Απαραίτητα",
+        description: "<p><span style=\"color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px; letter-spacing: normal;\">Αυτά τα cookies είναι απαραίτητα για τη σωστή λειτουργία της ιστοσελίδας και δεν μπορούν να απενεργοποιηθούν. Βοηθούν σε λειτουργίες όπως η είσοδος και η ρύθμιση των προτιμήσεων απορρήτου σας.</span></p>",
+        required: true,
+        onAccept: function() {
+          console.log('Add logic for the required Απαραίτητα here');
+        }
+      },
+      {
+        id: "",
+        name: "Αναλυτικά",
+        description: "<p><span style=\"color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px; letter-spacing: normal;\">Αυτά τα cookies μας βοηθούν να βελτιώσουμε τον ιστότοπο παρακολουθώντας ποιες σελίδες είναι πιο δημοφιλείς και πώς οι επισκέπτες κινούνται στον ιστότοπο.</span></p>",
+        required: true,
+        onAccept: function() {
+          console.log('Add logic for the required Αναλυτικά here');
+        }
+      },
+      {
+        id: "",
+        name: "Διαφημιστικά",
+        description: "<p><span style=\"color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px; letter-spacing: normal;\">Αυτά τα cookies παρέχουν επιπλέον λειτουργίες και προσωποποίηση για να βελτιώσουν την εμπειρία σας. Μπορεί να οριστούν από εμάς ή από συνεργάτες των οποίων τις υπηρεσίες χρησιμοποιούμε.</span></p>",
+        required: true,
+        onAccept: function() {
+          console.log('Add logic for the required Διαφημιστικά here');
+        }
+      }
+    ],
+    text: {
+      banner: {
+        description: "<p>Χρησιμοποιούμε cookies στον ιστότοπό μας για να βελτιώσουμε την εμπειρία χρήσης σας, να παρέχουμε εξατομικευμένο περιεχόμενο και να αναλύουμε την επισκεψιμότητά μας. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Πολιτική Cookies.</a></p>",
+        acceptAllButtonText: "Αποδοχή όλων",
+        acceptAllButtonAccessibleLabel: "Αποδοχή όλων των cookies",
+        rejectNonEssentialButtonText: "Απόρριψη μη απαραίτητων",
+        rejectNonEssentialButtonAccessibleLabel: "Απόρριψη μη απαραίτητων cookies",
+        preferencesButtonText: "Προτιμήσεις",
+        preferencesButtonAccessibleLabel: "Αλλαγή προτιμήσεων"
+      },
+      preferences: {
+        title: "Προσαρμόστε τις προτιμήσεις των cookies σας",
+        description: "<p>Σεβόμαστε το δικαίωμά σας στην ιδιωτικότητα. Μπορείτε να επιλέξετε να μην επιτρέψετε ορισμένους τύπους cookies. Οι προτιμήσεις σας θα ισχύουν σε ολόκληρο τον ιστότοπό μας.</p>",
+        creditLinkText: "Αποκτήστε αυτό το banner δωρεάν",
+        creditLinkAccessibleLabel: "Αποκτήστε αυτό το banner δωρεάν"
+      }
+    }
+  });
+  </script>
+
+
+
   <!-- JSON-LD Structured Data for Rich Results -->
   <script type="application/ld+json">
   {
